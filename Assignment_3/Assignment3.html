@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <center>
+      <h2>Registration Form</h2>
+      <video width="800px" height="500px" controls="controls autoplay" style="float: inline-start;">
+        <source src="./video (2160p).mp4" type="video/mp4" />
+      </video>
+      <form>
+        <table style="height: 500px; width: 600px;float: inline-end;">
+          <tbody>
+            <tr>
+              <td><strong>Name</strong></td>
+              <td>
+                <input
+                  type="text"
+                  name="Name"
+                  id="name"
+                  placeholder="Enter Name"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Birthdate</strong></td>
+              <td><input type="date" name="Date" id="date" /></td>
+            </tr>
+            <tr>
+              <td><strong>Email</strong></td>
+              <td>
+                <input
+                  type="email"
+                  name="Email"
+                  id="email"
+                  placeholder="Enter Email"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Password</strong></td>
+              <td>
+                <input
+                  type="password"
+                  name="Password"
+                  id="password"
+                  placeholder="Enter Password"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Address</strong></td>
+              <td><select name="state" id="state">
+                <option value="0">Select State</option>
+                <option value="1">Maharastra</option>
+                <option value="2">Gujurat</option>
+                <option value="3">Madhya Pradesh</option>
+                <option value="4">Karnataka</option>
+                <option value="5">Goa</option>
+              </select>
+              <select name="district" id="district">
+                <option value="0">Select District</option>
+                <option value="1">Pune</option>
+                <option value="2">Thane</option>
+                <option value="3">Wardha</option>
+                <option value="4">Palghar</option>
+                <option value="5">Mumbai</option>
+                <option value="6">Raigad</option>
+                <option value="7">Ratnagiri</option>
+              </select>
+              <select name="city" id="city">
+                <option value="0">Select City</option>
+                <option value="1">Manor</option>
+                <option value="2">Mastan</option>
+                <option value="3">Charoti</option>
+                <option value="4">Boisar</option>
+                <option value="5">Sanpada</option>
+              </select>
+            </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>State_____________District___________City</td>
+              </tr>
+            <tr>
+              <td><strong>Gender</strong></td>
+              <td>
+                <input type="radio" name="Gender" id="male">
+                <label for="Male">Male</label>
+                <input type="radio" name="Gender" id="female"/>
+                <label for="Female">Female</label>
+              </input>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Upload Photo</strong></td>
+              <td><input type="file" name="myImage" accept="image/png, image/gif, image/jpeg"/></td>
+            </tr>
+            <tr>
+              <td><strong>Select Course of your choice</strong></td>
+              <td><select name="city" id="city">
+                <option value="0">Select Course</option>
+                <option value="1">DAC</option>
+                <option value="2">DMC</option>
+                <option value="3">DBDA</option>
+                <option value="4">DITISS</option>
+              </select></td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>
+                  <input type="button" value="Register" onclick="Register()" style="width: 100px;border-radius: 5px;">
+                </td>
+                <td>
+                  <input type="button" value="Clear" onclick="Clear()" style="width: 100px;border-radius: 5px;">
+                </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </center>
+  </body>
+</html>

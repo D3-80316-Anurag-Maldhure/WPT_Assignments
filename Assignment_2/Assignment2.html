@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+    <style>
+        #upperTable td {
+            width: 150px;
+        }
+        #upperTable input {
+            border-radius: 8px;
+        }
+        #buttonTable td {
+            width: 100px;
+        }
+        #buttonTable input{
+            border-radius: 8px;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <center>
+        <h2>CALCULATOR</h2>
+        <table>
+          <tbody id="upperTable">
+            <tr>
+              <td>Enter Number 1</td>
+              <td>
+                <input
+                  type="number"
+                  name="tb1"
+                  id="tb1"
+                  placeholder="Enter Number"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Enter Number 2</td>
+              <td>
+                <input
+                  type="number"
+                  name="tb2"
+                  id="tb2"
+                  placeholder="Enter Number"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Result</td>
+              <td><input type="number" name="res" id="res" placeholder="Result"/></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <table>
+          <tr id="buttonTable">
+            <td><input type="button" value="Addition" id="add" onclick="ADD()"></td>
+            <td><input type="button" value="Subtract" id="sub" onclick="SUB()"></td></td>
+            <td><input type="button" value="Multiply" id="mult" onclick="MULT()"></td></td>
+            <td><input type="button" value="Division" id="div" onclick="DIV()"></td></td>
+          </tr>
+        </table>
+      </center>
+    </div>
+  </body>
+  <script>
+    var tb1 = document.getElementById("tb1");
+    var tb2 = document.getElementById("tb2");
+    var res = document.getElementById("res");
+    var ADD = () =>{
+        res.value=parseInt(tb1.value)+parseInt(tb2.value);
+    }
+    var SUB = () =>{
+        res.value=parseInt(tb1.value)-parseInt(tb2.value);
+    }
+    var MULT = () =>{
+        res.value=parseInt(tb1.value)*parseInt(tb2.value);
+    }
+    var DIV = () =>{
+        res.value=parseInt(tb1.value)/parseInt(tb2.value);
+    }
+  </script>
+</html>
